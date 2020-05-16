@@ -1,9 +1,9 @@
 import pygame, sys, time, random
 from pygame.locals import *
 
-pygame.init()
-play_surface = pygame.display.set_mode((500, 500))
-fps = pygame.time.Clock()
+#pygame.init()
+#play_surface = pygame.display.set_mode((500, 500))
+#fps = pygame.time.Clock()
 
 class Snake():
     position = [100,50]
@@ -96,7 +96,7 @@ class Game():
     # Posición snake[1] >= 500 ó snake[1] <= 0                  -> Muere
     # Posición del snake choca con sigo mismo menos la cabeza   -> Muere 
     def dead(self, snake):
-        if snake.position[0] <= 0 or snake.position[1] >= 500:
+        if snake.position[0] <= 0 or snake.position[0] >= 500:
             print("Game Over! Score: %s)" %(self.score))
             self.run = False
         elif snake.position[1] <= 0 or snake.position[1] >= 500:
@@ -113,9 +113,9 @@ class Game():
 def main():
     # Descomentar para lanzar el juego en local
     # Comentar para validar con el oráculo
-    pygame.init()
-    play_surface = pygame.display.set_mode((500, 500))
-    fps = pygame.time.Clock()
+    #pygame.init()
+    #play_surface = pygame.display.set_mode((500, 500))
+    #fps = pygame.time.Clock()
 
     snake = Snake()
     game = Game()
@@ -141,11 +141,11 @@ def main():
         game.dead(snake)
 
         pygame.display.flip()
-        fps.tick(5)
+        fps.tick(20)
 
         
 # Comienza la aventura!!!!
 # Descomentar para lanzar el juego en local
 # Comentar para validar con el oráculo
-main()
-pygame.quit()
+#main()
+#pygame.quit()
