@@ -141,7 +141,7 @@ def main():
         game.dead(snake)
 
         pygame.display.flip()
-        fps.tick(20)
+        fps.tick(10)
 
         
 # Comienza la aventura!!!!
