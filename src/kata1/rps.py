@@ -7,13 +7,13 @@ options = ["Piedra", "Papel", "Tijeras"]
 #'Ganaste!'
 #'Perdiste!'
 def quienGana(player, ai):
-    if player.lower() == ai.lower():
+    if player == ai:
         return "Empate!"
-    elif player.lower() == 'piedra' and ai.lower() == 'papel':
+    elif player == 'Piedra' and ai == 'Papel':
         return "Perdiste!" 
-    elif player.lower() == 'papel' and ai.lower() == 'tijera':
+    elif player == 'Papel' and ai == 'Tijeras':
         return "Perdiste!" 
-    elif player.lower() == 'tijera' and ai.lower() == 'piedra':
+    elif player == 'Tijeras' and ai == 'Piedra':
         return "Perdiste!" 
     return "Ganaste!"
 
