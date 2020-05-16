@@ -9,11 +9,11 @@ options = ["Piedra", "Papel", "Tijeras"]
 def quienGana(player, ai):
     if player == ai:
         return "Empate!"
-    elif player == 'Piedra' and ai == 'Papel':
+    elif player.lower() == 'piedra' and ai.lower() == 'papel':
         return "Perdiste!" 
-    elif player == 'Papel' and ai == 'Tijeras':
+    elif player.lower() == 'papel' and ai.lower() == 'tijeras':
         return "Perdiste!" 
-    elif player == 'Tijeras' and ai == 'Piedra':
+    elif player.lower() == 'tijeras' and ai.lower() == 'piedra':
         return "Perdiste!" 
     return "Ganaste!"
 
