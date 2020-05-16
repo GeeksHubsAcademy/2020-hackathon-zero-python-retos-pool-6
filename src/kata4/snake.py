@@ -105,22 +105,7 @@ class Game():
         if snake.position in snake.body[1:]:
             print("Game Over! Score: %s)" %(self.score))
             self.run = False
-
-        #for x in snake.body:
-        #    if x[0] == map(lambda y:y[0], snake.body):
-
- 
-        #
-        #
-        #
         
-        #
-        #
-        #
-        
-        #
-        #
-        #
         return True
  
             
